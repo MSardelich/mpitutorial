@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
   if (world_rank == 0) {
     const int MAX_NUMBERS = 100;
     int numbers[MAX_NUMBERS];
-    // Pick a random amont of integers to send to process one
+    // Pick a random amount of integers to send to process one
     srand(time(NULL));
     number_amount = (rand() / (float)RAND_MAX) * MAX_NUMBERS;
     // Send the amount of integers to process one
